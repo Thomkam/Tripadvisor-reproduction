@@ -1,0 +1,65 @@
+/* GLOBAL STYLE */
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1135px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+h1 span {
+  color: orange;
+}
+
+/* ---------- */
+
+/* HEADER */
+.navigation-header {
+  border: 2px solid blue;
+}
+
+.navigation-header a {
+  border: 1px solid red;
+}
+
+header {
+  height: 60px;
+  border-bottom: 2px solid grey;
+}
+
+header > div {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+}
+
+.navigation-header a:not(:first-child) {
+  margin-left: 40px;
+}
+
+.navigation-header button {
+  margin-left: 20px;
+}
+
+.navigation-header a:hover {
+  background-color: #f2f2f2;
+}
+
+/* -------- */
+/* MAIN */
+main {
+  padding-top: 100px;
+}
