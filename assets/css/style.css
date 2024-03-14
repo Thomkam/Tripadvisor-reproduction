@@ -10,17 +10,42 @@
 }
 
 h1 {
+  font-family: TS-med;
   font-size: 50px;
   margin-bottom: 100px;
+  font-weight: bold;
 }
 
 h1 span {
-  color: orange;
+  color: #ff4500;
 }
 
+h2 {
+  font-size: TS-med;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: TS-med;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: TS-med;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 /* ---------- */
 
 /* HEADER */
+
+/* ---------- */
+
 /* .navigation-header { */
 /*   border: 2px solid blue;
 
@@ -76,21 +101,23 @@ header img {
 }
 
 /* -------- */
+
 /* MAIN */
+
+/* -------- */
 
 /* Le Haut du MAIN */
 
 main {
   /*   border: solid red;
  */
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
-.intro {
-  /*   border: solid blue;
+/* .intro {
+  border: solid blue;
   flex-direction: column;
- */
-}
+} */
 
 .intro h1 {
   margin: 10px;
@@ -101,9 +128,11 @@ main {
  */
   display: flex;
   padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .navigation-menu > div {
+  font-family: Ts-Med;
   display: flex;
   flex: 1;
   border: solid black;
@@ -111,7 +140,8 @@ main {
   border-radius: 15px;
   justify-content: space-between;
   margin: 5px;
-  align-items: center;
+  /*   align-items: center;
+ */
 }
 
 .navigation-menu span {
@@ -124,7 +154,201 @@ main {
   border-radius: 15;
 }
 
-.navigation-menu {
-}
+/* -------- */
 
 /* Les 1er images du MAIN */
+
+/* -------- */
+
+.picture-bloc {
+  /*   border: 2px solid chocolate;
+ */
+  display: flex;
+  margin-bottom: 25px;
+  height: 430px;
+  gap: 2px;
+}
+
+/* -------- */
+
+/* Left picture */
+
+/* -------- */
+
+.left-bloc {
+  /*   background: #ff4500;
+ */
+  height: 100%;
+  flex: 1;
+}
+
+.left-bloc img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* -------- */
+
+/* Right pictures */
+
+/* -------- */
+
+.right-bloc {
+  /*   background-color: blue;
+ */
+  width: 480px;
+  height: 100%;
+}
+
+.right-bloc > div {
+  /*   border: 2px chocolate;
+ */
+  height: 50%;
+  width: 100%;
+}
+
+.right-bloc img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-bloc div:first-child {
+  margin-bottom: 2px;
+}
+
+/* -------- */
+
+/* Footer-picture */
+
+/* -------- */
+
+.footer-picture {
+  border: solid red;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.footer-picture span:last-child {
+  border: solid blue;
+  flex: 1;
+}
+
+/* .footer-picture span {
+} */
+
+/* -------- */
+
+/* City description */
+
+/* -------- */
+
+.section3 {
+  border: solid green;
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.city-desc {
+  width: 60%;
+  padding-right: 150px;
+}
+
+.bloc-map {
+  border: solid darkgoldenrod;
+  background-color: #ff5d5d;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 15px;
+  flex: 1;
+  /* overflow: hidden; */
+}
+
+.map-text {
+  font-family: Ts-Med;
+  padding: 20px;
+  flex: 2;
+}
+
+.map-button {
+  color: white;
+  /*   font-family: Ts-Med;
+ */
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.map-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  height: 80%;
+}
+
+/* ----------- */
+
+/* section caroussel */
+
+/* ----------- */
+
+.caroussel-section {
+  border: 2px solid green;
+  margin-bottom: 100px;
+}
+
+.caroussel-section-main {
+  border: 2px solid blue;
+  display: flex;
+}
+
+.caroussel-desc {
+  background-color: red;
+  flex: 1;
+  padding: 10px;
+}
+
+.caroussel {
+  background-color: pink;
+  flex: 3;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.caroussel > div {
+  width: calc((100% - 30px) / 3);
+  flex-shrink: 0;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.relativ-div {
+  position: relative;
+}
+
+.caroussel > div img {
+  width: 100%;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.background-div {
+  height: 150px;
+  background-image: url("../imgs/Paris-2024-bis.jpg");
+  background-position: center;
+  background-size: cover;
+}
